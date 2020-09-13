@@ -23,6 +23,7 @@ namespace myweather.Controllers
             _logger = logger;
         }
 
+
         [HttpGet]
         [Route("GetWeather")]
         public IEnumerable<WeatherForecast> Get()
@@ -41,7 +42,7 @@ namespace myweather.Controllers
         [Route("GetMessage")]
         public string GetMessage()
         {
-            return "test ci cd pipeline";
+            return "test ci cd pipeline wow";
         }
 
     }
