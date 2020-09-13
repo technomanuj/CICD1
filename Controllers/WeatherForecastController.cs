@@ -38,18 +38,11 @@ namespace myweather.Controllers
         }
 
         [HttpGet]
-        [Route("GetWeatherNew")]
-        public IEnumerable<WeatherForecast> GetWeatherNew()
+        [Route("GetMessage")]
+        public string GetMessage()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return "test ci cd pipeline";
         }
-        
+
     }
 }
