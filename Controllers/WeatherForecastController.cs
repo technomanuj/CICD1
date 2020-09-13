@@ -39,7 +39,7 @@ namespace myweather.Controllers
 
         [HttpGet]
         [Route("GetWeatherNew")]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> GetWeatherNew()
         {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
