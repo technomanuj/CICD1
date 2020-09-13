@@ -50,5 +50,6 @@ namespace myweather.Controllers
             })
             .ToArray();
         }
+        
     }
 }
