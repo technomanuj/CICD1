@@ -42,7 +42,7 @@ namespace myweather.Controllers
         [Route("GetMessage")]
         public string GetMessage()
         {
-            return "test ci cd pipeline wow";
+            return "JAI SHREE RAM JI";
         }
 
     }
