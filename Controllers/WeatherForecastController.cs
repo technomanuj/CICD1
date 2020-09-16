@@ -38,9 +38,16 @@ namespace myweather.Controllers
             .ToArray();
         }
 
+        // [HttpGet]
+        // [Route("GetMessage")]
+        // public string GetMessage()
+        // {
+        //     return "JAI SHREE RAM JI";
+        // }
+
         [HttpGet]
         [Route("GetMessage")]
-        public string GetMessage()
+        public string Get()
         {
             return "JAI SHREE RAM JI";
         }
